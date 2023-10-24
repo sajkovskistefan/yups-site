@@ -1,0 +1,63 @@
+.navbar {
+    background-color: var(--primary-purple-color);
+    width: 100%;
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--primary-white-color);
+    transition: color 0.3s;
+
+}
+
+.nav-list li a:hover {
+    color: var(--primary-orange-color);
+}
+
+/* css for tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Increase height in horizontal mode */
+@media (min-width: 769px) {
+    .navbar {
+        height: 8vh;
+        align-items: center;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        transition: color 0.3s;
+
+    }
+
+    .nav-list li {
+        margin: 0 20px;
+    }
+}

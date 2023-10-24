@@ -1,0 +1,55 @@
+.yups-logo-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../UI/Assets/HeroSectionBcg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-section-text {
+    color: var(--primary-white-color);
+    font-size: 250%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    width: 50%;
+    padding: 6rem;
+}
+
+.header-button-class {
+    margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+    .yups-logo-background {
+        background-image: none;
+        background-color: var(--primary-purple-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section-text {
+        font-size: 200%;
+    }
+
+    .header-button-class {
+        margin: 0;
+    }
+}
+
+@media (max-width: 339px) {
+    .header-button-class {
+        margin: 0;
+    }
+
+    .hero-section-text {
+        padding: 1rem;
+    }
+}
