@@ -1,63 +1,83 @@
 .navbar {
-    background-color: var(--primary-purple-color);
-    width: 100%;
-    display: flex;
+  display: flex;
+  background-color: transparent;
+  top: 4.75rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    margin: 0 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 66%;
+  margin-left: 5rem;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: var(--primary-white-color);
-    transition: color 0.3s;
-
+  text-decoration: none;
+  transition: color 0.3s;
+  color: #ff7f00;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.nav-list li a:hover {
-    color: var(--primary-orange-color);
+li a {
+  color: #666;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+li a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ff7f00;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+li a:hover:after {
+  transform: scaleX(1);
 }
 
 /* css for tablets */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
+  .navbar {
+    flex-direction: column;
+  }
 
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nav-list li {
-        margin: 10px 0;
-    }
+  .nav-list li {
+    margin: 10px 0;
+  }
 }
 
 /* Increase height in horizontal mode */
 @media (min-width: 769px) {
-    .navbar {
-        height: 8vh;
-        align-items: center;
-    }
+  .navbar {
+    height: 8vh;
+    align-items: center;
+  }
 
-    .nav-list li a {
-        text-decoration: none;
-        transition: color 0.3s;
+  .nav-list li a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-    }
-
-    .nav-list li {
-        margin: 0 20px;
-    }
+  .nav-list li {
+    margin: 0 20px;
+  }
 }

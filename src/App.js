@@ -1,12 +1,10 @@
-import './App.css';
-import { HeaderSection } from './Sections/HeaderSection/HeaderSection';
-import { Navbar } from './Sections/Navbar/Navbar';
-import { Services } from './Sections/Services/Services';
+import "./App.css";
+import { HeaderSection } from "./Sections/HeaderSection/HeaderSection";
+import { Services } from "./Sections/Services/Services";
 
 function App() {
   return (
     <div>
-      <Navbar />
       <HeaderSection />
       <Services />
     </div>
